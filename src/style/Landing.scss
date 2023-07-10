@@ -1,0 +1,75 @@
+@import "colors";
+
+.home {
+    width: 80%;
+    display: flex;
+    padding: 2rem;
+
+    >main {
+        flex-wrap: wrap;
+
+        h1 {
+            color: black;
+            font-size: 40px;
+            font-weight: 600;
+            font-style: normal;
+            font-family: sans-serif;
+        }
+
+        p {
+            color: grey;
+            font-size: 17px;
+            font-family: sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+    }
+
+    img {
+        width: 300px;
+        height: 250px;
+        display: -webkit-box;
+        margin-left: 300px;
+    }
+
+
+
+}
+
+
+
+.Parentcontainer {
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.childContainer {
+    width: 245px;
+    height: 80px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    transition: all 0.3s;
+    margin: 4px;
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px 0 rgba(114, 138, 83, 0.2);
+    }
+
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    >h4 {
+        font-family: sans-serif;
+        font-stretch: expanded;
+        color: rgb(81, 182, 98);
+    }
+}
+
+.link {
+    text-decoration: none;
+}

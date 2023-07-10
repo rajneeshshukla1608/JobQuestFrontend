@@ -1,0 +1,52 @@
+@import "colors";
+
+nav {
+    width: 100%;
+    padding: 0rem;
+    display: flex;
+    justify-content: space-between;
+    h2 > a {
+        text-decoration: none;
+        color: rgb(42, 197, 42);
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 600;
+            margin-left: 20px;
+           color: rgb(42, 197, 42);
+           
+        }
+
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        > a {
+            margin-left: 20px;
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

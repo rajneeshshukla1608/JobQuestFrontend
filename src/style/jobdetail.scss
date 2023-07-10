@@ -1,0 +1,35 @@
+.parent-container {
+    width: 50vw;
+    height: 80vh;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 16px 16px 0 rgba(114, 138, 83, 0.2);
+}
+
+.child-container-one {
+    width: 48vw;
+    margin: auto;
+}
+
+.detail-one {
+    width: 46vw;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.detail-two {
+    width: 42vw;
+    padding: 1rem;
+}
+
+.detail-three {
+    padding: 2rem;
+    margin: auto;
+}
+
+.detail-four {
+    align-items: center;
+    width: 40vw;
+}
+
