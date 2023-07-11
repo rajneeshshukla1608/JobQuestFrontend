@@ -1,4 +1,4 @@
-# JobBoardServer
+# JobQuestServer
 Live ✔
 https://job-board-zeta-seven.vercel.app
 JobQuest A an online platform for jobseekers 
