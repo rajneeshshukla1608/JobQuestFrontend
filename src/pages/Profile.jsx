@@ -13,7 +13,7 @@ const Profile = ({ name }) => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get("http://localhost:5001/api/v1/users/me", {
+        const { data } = await axios.get("https://jobquestserver.onrender.com/api/v1/users/me", {
           withCredentials: true
         });
         setProfile(data.user);
