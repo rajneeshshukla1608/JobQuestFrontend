@@ -55,7 +55,7 @@ const DetailCard = () => {
   const [talent, setTalent] = useState(initialvalues);
 
   const submit = async () => {
-    const { data } = await axios.post("http://localhost:5001/api/v1/profile/new", {
+    const { data } = await axios.post("https://jobquestserver.onrender.com/api/v1/profile/new", {
       name: talent.name,
       email: talent.email,
       mobile: talent.mobile,
