@@ -11,7 +11,7 @@ const Sales = () => {
   useEffect(() => {
     const getHandler = async () => {
       try {
-        const { data } = await axios.get(`http://localhost:5001/api/v1/jobs/engineering/2`)
+        const { data } = await axios.get(`https://jobquestserver.onrender.com/api/v1/jobs/engineering/2`)
         setSales(data.job);
         setLoading(false);
 
