@@ -19,7 +19,7 @@ const Header = () => {
   const logout = async() => {
 
     try {
-      const {data} = await axios.get("http://localhost:5001/api/v1/users/logout", {
+      const {data} = await axios.get("https://jobquestserver.onrender.com/api/v1/users/logout", {
         withCredentials: true
       });
       toast.success(data.message)
