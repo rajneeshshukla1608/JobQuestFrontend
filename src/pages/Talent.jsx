@@ -7,7 +7,7 @@ const Talent = () => {
 
   useEffect(() => {
     const talentHandler = async (req, res) => {
-      const { data } = await axios.get("http://localhost:5001/api/v1/profile/talent")
+      const { data } = await axios.get("https://jobquestserver.onrender.com/api/v1/profile/talent")
       console.log(data.talents);
       setTalent(data.talents);
     }
