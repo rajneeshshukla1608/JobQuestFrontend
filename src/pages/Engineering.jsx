@@ -10,7 +10,7 @@ const Engineering = () => {
   useEffect(() => {
     const getHandler = async () => {
       try {
-        const { data } = await axios.get(`http://localhost:5001/api/v1/jobs/engineering/1`)
+        const { data } = await axios.get(`https://jobquestserver.onrender.com/api/v1/jobs/engineering/1`)
         setJobs(data.job);
         setLoading(false);
       } catch (error) {
