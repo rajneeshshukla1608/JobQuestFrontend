@@ -18,7 +18,8 @@ const Profile = ({ name }) => {
         });
         setProfile(data.user);
       } catch (error) {
-        console.log(error)
+    toast.error("Not Logged in");
+        
       }
     }
     getData();
