@@ -22,7 +22,7 @@ const Register = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:5001/api/v1/users/register", {
+      const { data } = await axios.post("https://jobquestserver.onrender.com/api/v1/users/register", {
         name, 
         email,
         password,
