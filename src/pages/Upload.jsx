@@ -51,7 +51,7 @@ const UploadPage = () => {
   const [jobs, setJobs] = useState(initialvalues);
 
   const submit = async () => {
-    const { data } = await axios.post("http://localhost:5001/api/v1/jobs/uploadJobs", {
+    const { data } = await axios.post("https://jobquestserver.onrender.com/api/v1/jobs/uploadJobs", {
       title: jobs.title,
       location: jobs.location,
       id: jobs.id,
