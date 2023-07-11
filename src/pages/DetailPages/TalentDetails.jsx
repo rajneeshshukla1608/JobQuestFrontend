@@ -16,7 +16,7 @@ const TalentDetails = () => {
   useEffect(() => {
     const getDetails = async () => {
       try {
-        const { data } = await axios.get(`http://localhost:5001/api/v1/profile/talent/details/${params._id}`);
+        const { data } = await axios.get(`https://jobquestserver.onrender.com/api/v1/profile/talent/details/${params._id}`);
         setJobdetail(data.talentDetails);
         setLoading(false);
       } catch (error) {
