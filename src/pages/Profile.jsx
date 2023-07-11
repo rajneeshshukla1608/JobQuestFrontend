@@ -2,7 +2,7 @@ import React, { useState, useEffect, Fragment } from 'react'
 import axios from "axios"
 import TextField from "@mui/material/TextField"
 import Button from "@mui/material/Button"
-
+import toast from "react-hot-toast"
 
 
 const Profile = ({ name }) => {
@@ -18,8 +18,7 @@ const Profile = ({ name }) => {
         });
         setProfile(data.user);
       } catch (error) {
-    toast.error("Not Logged in");
-        
+        toast.error("Some error occured");
       }
     }
     getData();
@@ -99,9 +98,6 @@ const DetailCard = () => {
     </>
   )
 }
-
-
-
 
 
 export default Profile
