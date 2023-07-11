@@ -10,27 +10,27 @@ const Profile = ({ name }) => {
   const [profile, setProfile] = useState({});
   const [authenticated, setAuthenticated] = useState(false);
 
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const { data } = await axios.get("https://jobquestserver.onrender.com/api/v1/users/me", {
-          withCredentials: true
-        });
-        setProfile(data.user);
-      } catch (error) {
-        toast.error("Some error occured");
-      }
-    }
-    getData();
-  }, [])
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     try {
+  //       const { data } = await axios.get("https://jobquestserver.onrender.com/api/v1/users/me", {
+  //         withCredentials: true
+  //       });
+  //       setProfile(data.user);
+  //     } catch (error) {
+  //       toast.error("Some error occurred");
+  //     }
+  //   }
+  //   getData();
+  // }, [])
 
 
   return (
     <Fragment>
       <div>
-        <h2>
+{/*         <h2>
           Welcome to JobQuest  {profile.name}
-        </h2>
+        </h2> */}
         {
           authenticated ? (<>
             <div>Logged In</div></>) : (<DetailCard />)
