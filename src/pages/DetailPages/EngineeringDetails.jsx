@@ -14,7 +14,7 @@ export const EngineeringDetails = () => {
   useEffect(() => {
     const getDetails = async () => {
      try {
-      const { data } = await axios.get(`http://localhost:5001/api/v1/jobs/engineering/details/${params.jobID}`);
+      const { data } = await axios.get(`https://jobquestserver.onrender.com/api/v1/jobs/engineering/details/${params.jobID}`);
       setJobdetail(data.jobDetails)
      } catch (error) {
       toast.error("Some error Occured")
